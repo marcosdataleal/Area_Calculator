@@ -1,2 +1,7 @@
-# Area_Calculator
- 
+This Python code defines two classes, Calculator and Room, and uses them to calculate the area of the walls, the area of the ceiling, and the required paint volume for a room. Import the Calculator and Room classes from separate Python files (calculator.py and room.py, respectively). Create an instance of the Calculator class named calc. Prompt the user to input the width and depth of the room using input() functions. Create an instance of the Room class named room, passing the width and depth obtained from the user as arguments. The constructor of the Room class sets the room's height to a default value of 2.9.
+
+Calculate the area of the walls by calling the calculate_wall_area() method of the calc object, passing the room object as an argument. This method calculates the wall area based on the provided width, depth, and height. Calculate the area of the ceiling by calling the calculate_ceiling_area() method of the calc object, passing the room object as an argument. This method calculates the ceiling area based on the provided width and depth. Check if the wall area and ceiling area are greater than 0. If either of them is not greater than 0, it prints an error message and exits the program, indicating that it's not possible to calculate the paint volume with the provided values.
+
+If both the wall and ceiling areas are valid, calculate the required paint volume using the calculate_required_paint() method of the calc object. The formula used is the sum of wall area and ceiling area divided by 10. Print the results, including the wall area, ceiling area, and the required paint volume.
+
+In summary, this code allows you to calculate and print the wall area, ceiling area, and required paint volume for a room based on user-provided width and depth while ensuring data validation and error handling.
